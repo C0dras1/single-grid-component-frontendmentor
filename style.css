@@ -57,8 +57,8 @@ main {
 .box1 p {
   line-height: 160%;
   font-size: 90%;
-  color: hsl(218, 22%, 67%);
-  font-weight: 700;
+  color: hsl(217, 33%, 83%);
+  font-weight: 400;
 }
 
 
@@ -105,13 +105,21 @@ main {
   border-radius: 4px;
   width: 50%;
   transition: 0.2s ease-in;
+  -webkit-transition: 0.2s ease-in;
+  -moz-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
+  -webkit-transition: 0.2s ease-in;
 }
 
 .box2 button:hover,
 .box2 button:visited {
   background-color: hsl(71, 98%, 38%);
   box-shadow: 4px 8px 20px hsl(179, 61%, 28%);
-  transform: all 0.5s;
+  transform: all 0.2s;
+  -webkit-transform: all 0.2s;
+  -moz-transform: all 0.2s;
+  -o-transform: all 0.2s;
+  -webkit-transform: all 0.2s;
 }
 
 
@@ -142,3 +150,102 @@ h3 {
 .attribution { font-size: 11px; text-align: center; }
 
 .attribution a { color: hsl(228, 45%, 44%); }
+
+/*Smartphones (portrait and landscape) */
+@media screen and (max-width: 480px) {
+  main {
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.8fr 1fr 1fr;
+    grid-template-areas: 
+    "box1"
+    "box2"
+    "box3";
+  }
+  .content {
+    margin: 55px 40px;
+  }
+  /* ----BOX1 -----*/
+  
+  .box1 .content {
+    width: 90%;
+    word-spacing: 1px;
+    font-size: 105%;
+  }
+
+  .box1 h1 {
+    color: hsl(179, 62%, 43%);
+    padding-bottom: 8%;
+    font-size: 145%;
+  }
+
+  .box1 h3 {
+    color: hsl(71, 73%, 54%);
+    padding-bottom: 7%;
+    font-size: 140%;
+    font-weight: 400;
+    padding-right: 60px;
+  }
+
+  .box1 p {
+    line-height: 200%;
+    font-size: 100%;
+    color: hsl(217, 33%, 83%);
+    padding-right: 60px;
+  }
+  .box1 br {
+    display: none;
+  }
+
+  /* ----BOX2 -----*/
+  .box2 h3 {
+    font-weight: 700;
+    font-size: 150%;
+  }
+
+  .box2 h2 {
+    font-weight: 700; 
+    font-size: 220%;
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+
+  .box2 h2 span {
+    font-weight: 400;
+    font-size: 55%;
+    vertical-align: top;
+    color: hsla(203, 44%, 93%, 0.726);
+    padding-left: 4px;
+  }
+
+  .box2 p {
+    letter-spacing: 0.5px;
+    font-size: 130%;
+  }
+  .box2 button {
+    margin-top: 60px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 140%;
+    border-radius: 10px;
+    width: 100%;
+    letter-spacing: 1px;
+  }
+
+  /* ----BOX3 -----*/
+  h3 {
+    font-weight: 400;
+    font-size: 200%;
+    color: #eff6f7;
+    padding-bottom: 35px;
+  }
+
+  .box3 li {
+    list-style: none;
+    font-weight: 400;
+    color: hsla(203, 44%, 93%, 0.75);
+    line-height: 165%;
+    font-size: 130%;
+  }
+
+}
