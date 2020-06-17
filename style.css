@@ -1,0 +1,142 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Karla", sans-serif;
+  line-height: 160%;
+  font-weight: 400;
+}
+
+main {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.8fr 1fr;
+  grid-template-areas: 
+  "box1 box1"
+  "box2 box3";
+  overflow: hidden;
+}
+
+
+.content {
+  display: flex;
+  flex-direction: column;
+  vertical-align: middle;
+  margin: 65px 60px;
+}
+
+/* ----BOX1 -----*/
+.box1 {
+  background-color: white;
+  grid-area: box1;
+}
+
+.box1 .content {
+  width: 90%;
+  word-spacing: 1px;
+  font-size: 110%;
+}
+
+.box1 h1 {
+  color: hsl(179, 62%, 43%);
+  padding-bottom: 4.5%;
+}
+
+.box1 h3 {
+  color: hsl(71, 73%, 54%);
+  padding-bottom: 2.5%;
+  font-size: 148%;
+  font-weight: 700;
+}
+
+.box1 p {
+  line-height: 160%;
+  font-size: 90%;
+  color: hsl(218, 22%, 67%);
+  font-weight: 700;
+}
+
+
+/* ----BOX2 -----*/
+.box2 {
+  background-color: hsl(179, 62%, 43%);
+  grid-area: box2;
+  color: hsl(204, 43%, 93%);
+}
+
+.box2 h3 {
+  font-weight: 700;
+  font-size: 125%;
+}
+
+.box2 h2 {
+  font-weight: 700; 
+  font-size: 220%;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+
+.box2 h2 span {
+  font-weight: 400;
+  font-size: 55%;
+  vertical-align: top;
+  color: hsla(203, 44%, 93%, 0.726);
+  padding-left: 4px;
+}
+
+.box2 p {
+  letter-spacing: 0.5px;
+}
+.box2 button {
+  background-color: hsl(71, 73%, 54%);
+  border: 1px solid hsl(71, 73%, 54%);
+  color: inherit;
+  font-weight: 400;
+  margin-top: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 105%;
+  box-shadow: 2px 4px 10px hsl(179, 61%, 28%);
+  border-radius: 4px;
+  width: 50%;
+}
+
+.box2 button:hover,
+.box2 button:visited {
+  background-color: darkgreen;
+  font-size: 105%;
+}
+
+
+
+/* ----BOX3 -----*/
+.box3 {
+  background-color: hsl(179, 64%, 46%);
+  grid-area: box3;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 150%;
+  color: #eff6f7;
+  padding-bottom: 25px;
+}
+
+.box3 li {
+  list-style: none;
+  font-weight: 400;
+  color: hsla(203, 44%, 93%, 0.75);
+  line-height: 155%;
+}
+
+
+
+/* --- attribution styles --- */
+.attribution { font-size: 11px; text-align: center; }
+
+.attribution a { color: hsl(228, 45%, 44%); }
