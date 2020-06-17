@@ -94,7 +94,7 @@ main {
 }
 .box2 button {
   background-color: hsl(71, 73%, 54%);
-  border: 1px solid hsl(71, 73%, 54%);
+  border: 1px solid transparent;
   color: inherit;
   font-weight: 400;
   margin-top: 30px;
@@ -104,12 +104,14 @@ main {
   box-shadow: 2px 4px 10px hsl(179, 61%, 28%);
   border-radius: 4px;
   width: 50%;
+  transition: 0.2s ease-in;
 }
 
 .box2 button:hover,
 .box2 button:visited {
-  background-color: darkgreen;
-  font-size: 105%;
+  background-color: hsl(71, 98%, 38%);
+  box-shadow: 4px 8px 20px hsl(179, 61%, 28%);
+  transform: all 0.5s;
 }
 
 
